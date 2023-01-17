@@ -23,7 +23,7 @@ tasks are comparable.  Here are the tasks:
    book 4.3.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-getting-creating)).
    Write the command you
    used underneath in a code block.
-   
+   git clone https://github.com/eshabangur/lab2-git-markdown
 3. **add a new file** "books.md" to the repo.  You can use RStudio
    (file -> new file -> markdown file), or any other tool you find
    convenient.
@@ -37,23 +37,42 @@ tasks are comparable.  Here are the tasks:
 5. check **git status** (see [course book
    4.4.1](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-situational-awareness)).
    Show below, in _block quote_, what does it print.
+   >On branch main
+Your branch is up to date with 'origin/main'.
+
+>Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	books.md
+
+>nothing added to commit but untracked files present (use "git add" to track)
    
    Explain, in plain text, what does it mean.
-   
+Everything in the lab2 folder is up to date, however one file, books, is present in the folder, but is not updates into the git hub repo.
+
 6. **add** the new file to the repository (see [course book
   4.4.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-adding)).
   Show your command (as a
   code block).
-
+```{r}
+git add .
+git commit -m "commit books"
+git push
+```
 7. Was your add successful?  Check status again!  Explain what do you
    see.
+   yes, i see a file in lab2 in github that says "books". However, the file is currently empty
    
 8. Now **commit** your changes (see [course book
    4.4.4](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-committing)). 
    Put your command underneath in a code block.
-   
+   ```{r}
+   git add .
+   git commit -m "commit changes"
+   git push 
+   ```
 9. Was your commit successful?  How can you check it?  Show your
    command(s) as a code block and explain what you see!
+   yes it was successful- i can now see the text that's in my Rstudio file is also in my github file
    
 10. Now **push** your changes to Github (see [course book 4.4.5](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-pushing)).  You may
    need to create access token before you are able to push.
